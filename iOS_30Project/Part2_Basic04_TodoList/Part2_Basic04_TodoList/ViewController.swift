@@ -10,6 +10,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var editButton: UIBarButtonItem! // stong
+    // weak으로 하게되면. 해당 버튼이 done으로 바뀌었을 시
+    // edit 버튼이 메모리에서 해제되어 더 이상 재사용이 불가능하기 때문
+    var doneButton: UIBarButtonItem?
     var tasks = [Task]() {
         didSet {
             self.saveTasks() // 할일이 추가될 때마다, UserDefaults에 저장
@@ -18,12 +22,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTap))
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.loadTasks()
     }
+    
+    @objc func doneButtonTap() {
+        self.navigationItem.leftBarButtonItem = self.editButton
+        self.tableView.setEditing(false, animated: true) // tableView 편집모드 종료
+    }
 
     @IBAction func tapEditButton(_ sender: UIBarButtonItem) {
+        // tasks 배열이 비어있다면 return
+        guard !self.tasks.isEmpty else { return }
+        self.navigationItem.leftBarButtonItem = self.doneButton // doneButton으로 변경
+        self.tableView.setEditing(true, animated: true) // tableView가 편집모드로 전환
     }
     
     @IBAction func tapAddButton(_ sender: UIBarButtonItem) {
@@ -39,6 +53,11 @@ class ViewController: UIViewController {
             self?.tasks.append(task) // task가 추가될때마다 reload
             self?.tableView.reloadData()
             
+            // 모든 행을 삭제 후, 할일 추가 시. 테이블뷰 편집모드로 들어가는 경우가 있어
+            // 아래 코드를 추가
+            if self?.navigationItem.leftBarButtonItem == self?.editButton {
+                self?.tableView.setEditing(false, animated: true)
+            }
         }
         let cancelButton = UIAlertAction(title: "취소", style: .cancel, handler: nil)
         alert.addAction(cancelButton)
@@ -70,7 +89,6 @@ class ViewController: UIViewController {
             return Task(title: title, done: done) // Task 타입으로 정의
         }
     }
-    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -89,6 +107,34 @@ extension ViewController: UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        print(editingStyle)
+        
+        self.tasks.remove(at: indexPath.row)
+        // 삭제버튼을 누르게되면 해당 행 삭제(스와이프로+delete 버튼 탭으로도 삭제 가능)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
+        
+        if self.tasks.isEmpty || self.tasks.count == 0 { // tasks 배열 값이 없을 때(모든 행이 삭제)
+            self.doneButtonTap()
+        }
+    }
+    
+    // 행 순서 변경
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        // sourceIndexPath: 이전(원래) 위치
+        // proposedDestinationIndexPath: 이동한 위치
+        // 행이 이동함에 따라, tasks 배열의 순서도 변경
+        var tasks = self.tasks
+        let task = tasks[sourceIndexPath.row] // 이전 위치
+        tasks.remove(at: sourceIndexPath.row) // 이전위치의 값 삭제
+        tasks.insert(task, at: destinationIndexPath.row) // 이동한 위치에 값 추가
+        self.tasks = tasks
     }
 }
 
