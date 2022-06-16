@@ -13,6 +13,11 @@
 		F7758B3A2857548F005E0F6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7758B382857548F005E0F6C /* Main.storyboard */; };
 		F7758B3C28575492005E0F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7758B3B28575492005E0F6C /* Assets.xcassets */; };
 		F7758B3F28575492005E0F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7758B3D28575492005E0F6C /* LaunchScreen.storyboard */; };
+		F77E32F9285B47FA00C4F6A5 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E32F8285B47FA00C4F6A5 /* DiaryCell.swift */; };
+		F77E32FB285B483600C4F6A5 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E32FA285B483600C4F6A5 /* StarViewController.swift */; };
+		F77E32FD285B495400C4F6A5 /* StarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E32FC285B495400C4F6A5 /* StarCell.swift */; };
+		F77E32FF285B4ED400C4F6A5 /* WriteDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E32FE285B4ED400C4F6A5 /* WriteDiaryViewController.swift */; };
+		F77E3301285B4F4900C4F6A5 /* DiaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77E3300285B4F4900C4F6A5 /* DiaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F7758B3B28575492005E0F6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7758B3E28575492005E0F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7758B4028575492005E0F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77E32F8285B47FA00C4F6A5 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
+		F77E32FA285B483600C4F6A5 /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		F77E32FC285B495400C4F6A5 /* StarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCell.swift; sourceTree = "<group>"; };
+		F77E32FE285B4ED400C4F6A5 /* WriteDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryViewController.swift; sourceTree = "<group>"; };
+		F77E3300285B4F4900C4F6A5 /* DiaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				F7758B3B28575492005E0F6C /* Assets.xcassets */,
 				F7758B3D28575492005E0F6C /* LaunchScreen.storyboard */,
 				F7758B4028575492005E0F6C /* Info.plist */,
+				F77E32F8285B47FA00C4F6A5 /* DiaryCell.swift */,
+				F77E32FA285B483600C4F6A5 /* StarViewController.swift */,
+				F77E32FC285B495400C4F6A5 /* StarCell.swift */,
+				F77E32FE285B4ED400C4F6A5 /* WriteDiaryViewController.swift */,
+				F77E3300285B4F4900C4F6A5 /* DiaryDetailViewController.swift */,
 			);
 			path = Part2_Basic04_Diary;
 			sourceTree = "<group>";
@@ -139,8 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7758B372857548F005E0F6C /* ViewController.swift in Sources */,
+				F77E32FD285B495400C4F6A5 /* StarCell.swift in Sources */,
 				F7758B332857548F005E0F6C /* AppDelegate.swift in Sources */,
+				F77E32FF285B4ED400C4F6A5 /* WriteDiaryViewController.swift in Sources */,
 				F7758B352857548F005E0F6C /* SceneDelegate.swift in Sources */,
+				F77E3301285B4F4900C4F6A5 /* DiaryDetailViewController.swift in Sources */,
+				F77E32F9285B47FA00C4F6A5 /* DiaryCell.swift in Sources */,
+				F77E32FB285B483600C4F6A5 /* StarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
