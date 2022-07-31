@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol WriteDiaryViewDelegate: AnyObject {
+    func didSelectReigster(diary: Diary)
+}
+
 class WriteDiaryViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var contentTextView: UITextView!
@@ -15,6 +19,7 @@ class WriteDiaryViewController: UIViewController {
     
     private let datePicker = UIDatePicker()
     private var diaryDate: Date?
+    weak var delegate: WriteDiaryViewDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +60,13 @@ class WriteDiaryViewController: UIViewController {
         self.validateInputField() // 날짜가 입력될 때마다 실행
     }
     
-    @IBAction func tapConfirmButton(_ sender: UIBarButtonItem) {
+    @IBAction func tapConfirmButton(_ sender: UIBarButtonItem) { // 확인 버튼
+        guard let title = self.titleTextField.text else { return }
+        guard let contents = self.contentTextView.text else { return }
+        guard let date = self.diaryDate else { return }
+        let diary = Diary(title: title, contents: contents, date: date, isStar: false)
+        self.delegate?.didSelectReigster(diary: diary)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @objc private func datePickerValueDidChange(_ datePicker: UIDatePicker) {
