@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7ACAFD22915289F00C2FF8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFD12915289F00C2FF8C /* AppDelegate.swift */; };
+		F7ACAFD42915289F00C2FF8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFD32915289F00C2FF8C /* ContentView.swift */; };
+		F7ACAFD8291528A100C2FF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7ACAFD7291528A100C2FF8C /* Assets.xcassets */; };
+		F7ACAFDB291528A100C2FF8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7ACAFDA291528A100C2FF8C /* Preview Assets.xcassets */; };
+		F7ACAFE5291528A100C2FF8C /* AR_Model_PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFE4291528A100C2FF8C /* AR_Model_PlaceTests.swift */; };
+		F7ACAFEF291528A100C2FF8C /* AR_Model_PlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFEE291528A100C2FF8C /* AR_Model_PlaceUITests.swift */; };
+		F7ACAFF1291528A100C2FF8C /* AR_Model_PlaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFF0291528A100C2FF8C /* AR_Model_PlaceUITestsLaunchTests.swift */; };
+		F7ACB00329152B4800C2FF8C /* toy_drummer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACAFFF29152B4700C2FF8C /* toy_drummer.usdz */; };
+		F7ACB00429152B4800C2FF8C /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB00029152B4800C2FF8C /* cup_saucer_set.usdz */; };
+		F7ACB00529152B4800C2FF8C /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB00129152B4800C2FF8C /* toy_biplane.usdz */; };
+		F7ACB00929152C4800C2FF8C /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACB00829152C4800C2FF8C /* ARViewContainer.swift */; };
+		F7ACB00B29152CD000C2FF8C /* PickerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACB00A29152CD000C2FF8C /* PickerImage.swift */; };
+		F7ACB00D29152EC100C2FF8C /* ScrollModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACB00C29152EC100C2FF8C /* ScrollModelView.swift */; };
+		F7ACB0112915301900C2FF8C /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB00E2915301800C2FF8C /* gramophone.usdz */; };
+		F7ACB0122915301900C2FF8C /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB00F2915301900C2FF8C /* fender_stratocaster.usdz */; };
+		F7ACB0132915301900C2FF8C /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB0102915301900C2FF8C /* toy_robot_vintage.usdz */; };
+		F7DC32082932280400BE1A25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC32072932280400BE1A25 /* Model.swift */; };
+		F7FFC8892917D4230066F816 /* finana.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7FFC8882917D4230066F816 /* finana.usdz */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7ACAFE1291528A100C2FF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7ACAFC62915289F00C2FF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7ACAFCD2915289F00C2FF8C;
+			remoteInfo = "AR Model Place";
+		};
+		F7ACAFEB291528A100C2FF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7ACAFC62915289F00C2FF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7ACAFCD2915289F00C2FF8C;
+			remoteInfo = "AR Model Place";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7ACAFCE2915289F00C2FF8C /* AR Model Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Model Place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7ACAFD12915289F00C2FF8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7ACAFD32915289F00C2FF8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7ACAFD7291528A100C2FF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7ACAFDA291528A100C2FF8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7ACAFE0291528A100C2FF8C /* AR Model PlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR Model PlaceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7ACAFE4291528A100C2FF8C /* AR_Model_PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Model_PlaceTests.swift; sourceTree = "<group>"; };
+		F7ACAFEA291528A100C2FF8C /* AR Model PlaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR Model PlaceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7ACAFEE291528A100C2FF8C /* AR_Model_PlaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Model_PlaceUITests.swift; sourceTree = "<group>"; };
+		F7ACAFF0291528A100C2FF8C /* AR_Model_PlaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Model_PlaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7ACAFFF29152B4700C2FF8C /* toy_drummer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer.usdz; sourceTree = "<group>"; };
+		F7ACB00029152B4800C2FF8C /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		F7ACB00129152B4800C2FF8C /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		F7ACB00829152C4800C2FF8C /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		F7ACB00A29152CD000C2FF8C /* PickerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerImage.swift; sourceTree = "<group>"; };
+		F7ACB00C29152EC100C2FF8C /* ScrollModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollModelView.swift; sourceTree = "<group>"; };
+		F7ACB00E2915301800C2FF8C /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		F7ACB00F2915301900C2FF8C /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		F7ACB0102915301900C2FF8C /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		F7DC32072932280400BE1A25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F7FFC8882917D4230066F816 /* finana.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = finana.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7ACAFCB2915289F00C2FF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7ACAFDD291528A100C2FF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7ACAFE7291528A100C2FF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7ACAFC52915289F00C2FF8C = {
+			isa = PBXGroup;
+			children = (
+				F7ACAFD02915289F00C2FF8C /* AR Model Place */,
+				F7ACAFE3291528A100C2FF8C /* AR Model PlaceTests */,
+				F7ACAFED291528A100C2FF8C /* AR Model PlaceUITests */,
+				F7ACAFCF2915289F00C2FF8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7ACAFCF2915289F00C2FF8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7ACAFCE2915289F00C2FF8C /* AR Model Place.app */,
+				F7ACAFE0291528A100C2FF8C /* AR Model PlaceTests.xctest */,
+				F7ACAFEA291528A100C2FF8C /* AR Model PlaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7ACAFD02915289F00C2FF8C /* AR Model Place */ = {
+			isa = PBXGroup;
+			children = (
+				F7DC3206293227F500BE1A25 /* Model */,
+				F7ACB00729152C1600C2FF8C /* Views */,
+				F7ACAFFE29152AE600C2FF8C /* 3D Models */,
+				F7ACAFD12915289F00C2FF8C /* AppDelegate.swift */,
+				F7ACAFD7291528A100C2FF8C /* Assets.xcassets */,
+				F7ACAFD9291528A100C2FF8C /* Preview Content */,
+			);
+			path = "AR Model Place";
+			sourceTree = "<group>";
+		};
+		F7ACAFD9291528A100C2FF8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7ACAFDA291528A100C2FF8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7ACAFE3291528A100C2FF8C /* AR Model PlaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7ACAFE4291528A100C2FF8C /* AR_Model_PlaceTests.swift */,
+			);
+			path = "AR Model PlaceTests";
+			sourceTree = "<group>";
+		};
+		F7ACAFED291528A100C2FF8C /* AR Model PlaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7ACAFEE291528A100C2FF8C /* AR_Model_PlaceUITests.swift */,
+				F7ACAFF0291528A100C2FF8C /* AR_Model_PlaceUITestsLaunchTests.swift */,
+			);
+			path = "AR Model PlaceUITests";
+			sourceTree = "<group>";
+		};
+		F7ACAFFE29152AE600C2FF8C /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7ACB00F2915301900C2FF8C /* fender_stratocaster.usdz */,
+				F7FFC8882917D4230066F816 /* finana.usdz */,
+				F7ACB00E2915301800C2FF8C /* gramophone.usdz */,
+				F7ACB0102915301900C2FF8C /* toy_robot_vintage.usdz */,
+				F7ACB00029152B4800C2FF8C /* cup_saucer_set.usdz */,
+				F7ACB00129152B4800C2FF8C /* toy_biplane.usdz */,
+				F7ACAFFF29152B4700C2FF8C /* toy_drummer.usdz */,
+			);
+			path = "3D Models";
+			sourceTree = "<group>";
+		};
+		F7ACB00729152C1600C2FF8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7ACB00829152C4800C2FF8C /* ARViewContainer.swift */,
+				F7ACAFD32915289F00C2FF8C /* ContentView.swift */,
+				F7ACB00A29152CD000C2FF8C /* PickerImage.swift */,
+				F7ACB00C29152EC100C2FF8C /* ScrollModelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7DC3206293227F500BE1A25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DC32072932280400BE1A25 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7ACAFCD2915289F00C2FF8C /* AR Model Place */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7ACAFF4291528A100C2FF8C /* Build configuration list for PBXNativeTarget "AR Model Place" */;
+			buildPhases = (
+				F7ACAFCA2915289F00C2FF8C /* Sources */,
+				F7ACAFCB2915289F00C2FF8C /* Frameworks */,
+				F7ACAFCC2915289F00C2FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR Model Place";
+			productName = "AR Model Place";
+			productReference = F7ACAFCE2915289F00C2FF8C /* AR Model Place.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7ACAFDF291528A100C2FF8C /* AR Model PlaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7ACAFF7291528A100C2FF8C /* Build configuration list for PBXNativeTarget "AR Model PlaceTests" */;
+			buildPhases = (
+				F7ACAFDC291528A100C2FF8C /* Sources */,
+				F7ACAFDD291528A100C2FF8C /* Frameworks */,
+				F7ACAFDE291528A100C2FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7ACAFE2291528A100C2FF8C /* PBXTargetDependency */,
+			);
+			name = "AR Model PlaceTests";
+			productName = "AR Model PlaceTests";
+			productReference = F7ACAFE0291528A100C2FF8C /* AR Model PlaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7ACAFE9291528A100C2FF8C /* AR Model PlaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7ACAFFA291528A100C2FF8C /* Build configuration list for PBXNativeTarget "AR Model PlaceUITests" */;
+			buildPhases = (
+				F7ACAFE6291528A100C2FF8C /* Sources */,
+				F7ACAFE7291528A100C2FF8C /* Frameworks */,
+				F7ACAFE8291528A100C2FF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7ACAFEC291528A100C2FF8C /* PBXTargetDependency */,
+			);
+			name = "AR Model PlaceUITests";
+			productName = "AR Model PlaceUITests";
+			productReference = F7ACAFEA291528A100C2FF8C /* AR Model PlaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7ACAFC62915289F00C2FF8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					F7ACAFCD2915289F00C2FF8C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					F7ACAFDF291528A100C2FF8C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F7ACAFCD2915289F00C2FF8C;
+					};
+					F7ACAFE9291528A100C2FF8C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = F7ACAFCD2915289F00C2FF8C;
+					};
+				};
+			};
+			buildConfigurationList = F7ACAFC92915289F00C2FF8C /* Build configuration list for PBXProject "AR Model Place" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7ACAFC52915289F00C2FF8C;
+			productRefGroup = F7ACAFCF2915289F00C2FF8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7ACAFCD2915289F00C2FF8C /* AR Model Place */,
+				F7ACAFDF291528A100C2FF8C /* AR Model PlaceTests */,
+				F7ACAFE9291528A100C2FF8C /* AR Model PlaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7ACAFCC2915289F00C2FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7ACB0132915301900C2FF8C /* toy_robot_vintage.usdz in Resources */,
+				F7ACB00429152B4800C2FF8C /* cup_saucer_set.usdz in Resources */,
+				F7ACB0122915301900C2FF8C /* fender_stratocaster.usdz in Resources */,
+				F7ACB0112915301900C2FF8C /* gramophone.usdz in Resources */,
+				F7ACB00529152B4800C2FF8C /* toy_biplane.usdz in Resources */,
+				F7ACAFDB291528A100C2FF8C /* Preview Assets.xcassets in Resources */,
+				F7FFC8892917D4230066F816 /* finana.usdz in Resources */,
+				F7ACAFD8291528A100C2FF8C /* Assets.xcassets in Resources */,
+				F7ACB00329152B4800C2FF8C /* toy_drummer.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7ACAFDE291528A100C2FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7ACAFE8291528A100C2FF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7ACAFCA2915289F00C2FF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7ACB00D29152EC100C2FF8C /* ScrollModelView.swift in Sources */,
+				F7ACAFD42915289F00C2FF8C /* ContentView.swift in Sources */,
+				F7ACB00B29152CD000C2FF8C /* PickerImage.swift in Sources */,
+				F7DC32082932280400BE1A25 /* Model.swift in Sources */,
+				F7ACAFD22915289F00C2FF8C /* AppDelegate.swift in Sources */,
+				F7ACB00929152C4800C2FF8C /* ARViewContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7ACAFDC291528A100C2FF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7ACAFE5291528A100C2FF8C /* AR_Model_PlaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7ACAFE6291528A100C2FF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7ACAFEF291528A100C2FF8C /* AR_Model_PlaceUITests.swift in Sources */,
+				F7ACAFF1291528A100C2FF8C /* AR_Model_PlaceUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7ACAFE2291528A100C2FF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7ACAFCD2915289F00C2FF8C /* AR Model Place */;
+			targetProxy = F7ACAFE1291528A100C2FF8C /* PBXContainerItemProxy */;
+		};
+		F7ACAFEC291528A100C2FF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7ACAFCD2915289F00C2FF8C /* AR Model Place */;
+			targetProxy = F7ACAFEB291528A100C2FF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F7ACAFF2291528A100C2FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7ACAFF3291528A100C2FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7ACAFF5291528A100C2FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR Model Place/Preview Content\"";
+				DEVELOPMENT_TEAM = TM26X7BS3A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.AR-Model-Place";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7ACAFF6291528A100C2FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AR Model Place/Preview Content\"";
+				DEVELOPMENT_TEAM = TM26X7BS3A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.AR-Model-Place";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7ACAFF8291528A100C2FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLVYAAYF7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.AR-Model-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Model Place.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR Model Place";
+			};
+			name = Debug;
+		};
+		F7ACAFF9291528A100C2FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLVYAAYF7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.AR-Model-PlaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Model Place.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AR Model Place";
+			};
+			name = Release;
+		};
+		F7ACAFFB291528A100C2FF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLVYAAYF7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.AR-Model-PlaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Model Place";
+			};
+			name = Debug;
+		};
+		F7ACAFFC291528A100C2FF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZLVYAAYF7K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.AR-Model-PlaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Model Place";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7ACAFC92915289F00C2FF8C /* Build configuration list for PBXProject "AR Model Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7ACAFF2291528A100C2FF8C /* Debug */,
+				F7ACAFF3291528A100C2FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7ACAFF4291528A100C2FF8C /* Build configuration list for PBXNativeTarget "AR Model Place" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7ACAFF5291528A100C2FF8C /* Debug */,
+				F7ACAFF6291528A100C2FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7ACAFF7291528A100C2FF8C /* Build configuration list for PBXNativeTarget "AR Model PlaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7ACAFF8291528A100C2FF8C /* Debug */,
+				F7ACAFF9291528A100C2FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7ACAFFA291528A100C2FF8C /* Build configuration list for PBXNativeTarget "AR Model PlaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7ACAFFB291528A100C2FF8C /* Debug */,
+				F7ACAFFC291528A100C2FF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7ACAFC62915289F00C2FF8C /* Project object */;
+}
