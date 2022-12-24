@@ -9,10 +9,12 @@ import SwiftUI
 
 struct TextView: View {
     var body: some View {
-        Text("SwiftUI")
-            .font(.system(size: 40, weight: .bold, design: .default))
-        // .(점)찍고 나오는 것들이 modifier
-        // modifier의 순서는 중요
+        HStack {
+            Text("SwiftUI")
+                .font(.system(size: 40, weight: .bold, design: .default))
+            // .(점)찍고 나오는 것들이 modifier
+            // modifier의 순서는 중요
+        }
     }
 }
 

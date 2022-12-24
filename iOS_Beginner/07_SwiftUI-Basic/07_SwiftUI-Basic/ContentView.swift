@@ -10,9 +10,27 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         // main View를 담당
-        ImageView()
-//        ButtonView()
-//        TextView()
+        VStack() {
+            
+            ImageView()
+            ButtonView()
+            TextView()
+            
+            Spacer()
+            // StackView사이에 공간을 넣어줌
+            
+            HStack {
+                ImageView()
+                ButtonView()
+                TextView()
+            }
+            
+            ZStack {
+                ImageView()
+                ButtonView()
+                TextView()
+            }
+        }
     }
 }
 
