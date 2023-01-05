@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct ScrollModelView: View {
-    var models: [Model]
     
+    var models: [Model]
+    @Binding var selectedModel: Model?
     var body: some View {
         // ScrollView 생성(가로방향)
         ScrollView (.horizontal) {
             // 세로방향 stack 생성
             HStack {
                 ForEach(models) { item in
-                    // Image 생성
-                    PickerImage(model: item.image)
+                    Button(action: {
+                        selectedModel = item
+                        print(selectedModel?.modelName)
+                    }, label: {
+                        PickerImage(model: item.image)
+                    }).buttonStyle(PlainButtonStyle())
+                    
                 }
             }.background(Color.black.opacity(0.5))
         }
@@ -26,6 +32,6 @@ struct ScrollModelView: View {
 
 struct ScrollModelView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollModelView(models: ModelData().models)
+        ScrollModelView(models: ModelData().models, selectedModel: .constant(ModelData().models[0]))
     }
 }
