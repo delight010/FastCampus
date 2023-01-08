@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F75F414A2967145100E165B3 /* finana.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F75F41492967145100E165B3 /* finana.usdz */; };
 		F7ACAFD22915289F00C2FF8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFD12915289F00C2FF8C /* AppDelegate.swift */; };
 		F7ACAFD42915289F00C2FF8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ACAFD32915289F00C2FF8C /* ContentView.swift */; };
 		F7ACAFD8291528A100C2FF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7ACAFD7291528A100C2FF8C /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		F7ACB0122915301900C2FF8C /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB00F2915301900C2FF8C /* fender_stratocaster.usdz */; };
 		F7ACB0132915301900C2FF8C /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7ACB0102915301900C2FF8C /* toy_robot_vintage.usdz */; };
 		F7DC32082932280400BE1A25 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC32072932280400BE1A25 /* Model.swift */; };
-		F7FFC8892917D4230066F816 /* finana.usdz in Resources */ = {isa = PBXBuildFile; fileRef = F7FFC8882917D4230066F816 /* finana.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F75F41492967145100E165B3 /* finana.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = finana.usdz; sourceTree = "<group>"; };
 		F7ACAFCE2915289F00C2FF8C /* AR Model Place.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Model Place.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7ACAFD12915289F00C2FF8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7ACAFD32915289F00C2FF8C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		F7ACB00F2915301900C2FF8C /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
 		F7ACB0102915301900C2FF8C /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
 		F7DC32072932280400BE1A25 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		F7FFC8882917D4230066F816 /* finana.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = finana.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,9 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				F7ACB00F2915301900C2FF8C /* fender_stratocaster.usdz */,
-				F7FFC8882917D4230066F816 /* finana.usdz */,
 				F7ACB00E2915301800C2FF8C /* gramophone.usdz */,
 				F7ACB0102915301900C2FF8C /* toy_robot_vintage.usdz */,
+				F75F41492967145100E165B3 /* finana.usdz */,
 				F7ACB00029152B4800C2FF8C /* cup_saucer_set.usdz */,
 				F7ACB00129152B4800C2FF8C /* toy_biplane.usdz */,
 				F7ACAFFF29152B4700C2FF8C /* toy_drummer.usdz */,
@@ -294,7 +294,7 @@
 				F7ACB0112915301900C2FF8C /* gramophone.usdz in Resources */,
 				F7ACB00529152B4800C2FF8C /* toy_biplane.usdz in Resources */,
 				F7ACAFDB291528A100C2FF8C /* Preview Assets.xcassets in Resources */,
-				F7FFC8892917D4230066F816 /* finana.usdz in Resources */,
+				F75F414A2967145100E165B3 /* finana.usdz in Resources */,
 				F7ACAFD8291528A100C2FF8C /* Assets.xcassets in Resources */,
 				F7ACB00329152B4800C2FF8C /* toy_drummer.usdz in Resources */,
 			);
