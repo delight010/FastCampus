@@ -10,28 +10,31 @@ import SwiftUI
 struct StockRankView: View {
     @State var list = StockModel.list
     var body: some View {
-        //ForEach문으로 대응
-        List(list) { item in
-            StockRankRow(stock: item)
-                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                .listRowSeparator(.hidden)
+        NavigationView {
+            //ForEach문으로 대응
+            List($list) { $item in
+                ZStack {
+                    NavigationLink {
+                        // tap 시 이동할 target
+                        StockDetailView(stock: $item)
+                    } label: {
+                        EmptyView() // 비어있는 View
+                        // 즉 투명한 버튼
+                    }
+                    StockRankRow(stock: $item)
+                }
+                .listRowInsets(EdgeInsets())
                 .frame(height: 80)
+            }
+            .listStyle(.plain)
+            .navigationTitle("Stock Rank")
         }
-        .listStyle(.plain)
-//        ScrollView {
-//            VStack {
-//                ForEach(list, id:\.self) { stock in
-//                    StockRankRow(stock: stock)
-//                        .frame(height: 80)
-//                }
-//            }
-//        }
-        .background(.black)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         StockRankView()
+            .preferredColorScheme(.dark)
     }
 }

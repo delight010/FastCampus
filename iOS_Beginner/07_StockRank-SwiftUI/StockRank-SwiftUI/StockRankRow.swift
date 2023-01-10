@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct StockRankRow: View {
-    var stock: StockModel
+    @Binding var stock: StockModel
+    // @Binding이 없다면
+    // 값을 복사하게 됨.
     var body: some View {
         HStack {
             Text("\(stock.rank)")
@@ -47,6 +49,8 @@ struct StockRankRow: View {
 
 struct StockRankRow_Previews: PreviewProvider {
     static var previews: some View {
-        StockRankRow(stock: StockModel.list[2])
+        StockRankRow(stock: .constant( StockModel.list[2]))
+            .previewLayout(.fixed(width: 390, height: 80))
+        // 프리뷰 레이아웃 고정크기 지정
     }
 }

@@ -16,6 +16,7 @@
 		9486F0C528386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0C428386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift */; };
 		9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0D128386AE60069AEB0 /* StockModel.swift */; };
 		F75F41482967013F00E165B3 /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75F41472967013F00E165B3 /* StockRankRow.swift */; };
+		F78C998A296D3CBE00D96DF2 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C9989296D3CBE00D96DF2 /* StockDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9486F0C428386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRank_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9486F0D128386AE60069AEB0 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
 		F75F41472967013F00E165B3 /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
+		F78C9989296D3CBE00D96DF2 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				9486F0AB28386AC20069AEB0 /* Assets.xcassets */,
 				9486F0AD28386AC20069AEB0 /* Preview Content */,
 				F75F41472967013F00E165B3 /* StockRankRow.swift */,
+				F78C9989296D3CBE00D96DF2 /* StockDetailView.swift */,
 			);
 			path = "StockRank-SwiftUI";
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9486F0AA28386AC10069AEB0 /* StockRankView.swift in Sources */,
+				F78C998A296D3CBE00D96DF2 /* StockDetailView.swift in Sources */,
 				F75F41482967013F00E165B3 /* StockRankRow.swift in Sources */,
 				9486F0A828386AC10069AEB0 /* StockRank_SwiftUIApp.swift in Sources */,
 				9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */,
