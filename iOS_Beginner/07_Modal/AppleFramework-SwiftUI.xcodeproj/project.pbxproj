@@ -19,6 +19,7 @@
 		9486F10C283883D60069AEB0 /* FramewokData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F10B283883D60069AEB0 /* FramewokData.swift */; };
 		F7324CF4297A600F00857D60 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7324CF3297A600F00857D60 /* FrameworkDetailView.swift */; };
 		F7324CF6297A614D00857D60 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7324CF5297A614D00857D60 /* FrameworkListViewModel.swift */; };
+		F7324CF8297AC4DC00857D60 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7324CF7297AC4DC00857D60 /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		9486F10B283883D60069AEB0 /* FramewokData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewokData.swift; sourceTree = "<group>"; };
 		F7324CF3297A600F00857D60 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		F7324CF5297A614D00857D60 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		F7324CF7297AC4DC00857D60 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				9486F0E7283883B40069AEB0 /* Preview Content */,
 				F7324CF3297A600F00857D60 /* FrameworkDetailView.swift */,
 				F7324CF5297A614D00857D60 /* FrameworkListViewModel.swift */,
+				F7324CF7297AC4DC00857D60 /* FrameworkDetailViewModel.swift */,
 			);
 			path = "AppleFramework-SwiftUI";
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				F7324CF4297A600F00857D60 /* FrameworkDetailView.swift in Sources */,
 				9486F10C283883D60069AEB0 /* FramewokData.swift in Sources */,
 				9486F0E2283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift in Sources */,
+				F7324CF8297AC4DC00857D60 /* FrameworkDetailViewModel.swift in Sources */,
 				94768D4B2858DEB300F507E4 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

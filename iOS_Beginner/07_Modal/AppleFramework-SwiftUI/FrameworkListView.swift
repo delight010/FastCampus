@@ -47,10 +47,18 @@ struct FrameworkListView: View {
 //            FrameworkDetailView(framework: $vm.selectedItem)
 //        }
         // full Screen 형태(드래그 불가능)
-        .fullScreenCover(isPresented: $vm.isShowingDetail) {
-            FrameworkDetailView(framework: $vm.selectedItem)
+        //---
+//        .fullScreenCover(isPresented: $vm.isShowingDetail) {
+//            FrameworkDetailView(framework: $vm.selectedItem)
+//        }
+        //---
+        .sheet(isPresented: $vm.isShowingDetail) {
+            //---
+//            FrameworkDetailView(framework: $vm.selectedItem)
+            //---
+            let vm = FrameworkDetailViewModel(framework: vm.selectedItem!)
+            FrameworkDetailView(viewModel: vm)
         }
-        
     }
 }
 
